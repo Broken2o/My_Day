@@ -71,8 +71,6 @@ class CounterScreen extends StatelessWidget {
   }
 }
 
-
-
 class MYList extends StatelessWidget {
   const MYList({super.key});
 
@@ -102,14 +100,17 @@ class MYList extends StatelessWidget {
                 ],
               )),
     child:
-    Column(
-    children:[
-      ListView.separated(
-        shrinkWrap: true,
-        itemBuilder: (context,index ){ return ListRow(counteritem: counterList[index] );},
-        separatorBuilder: (context,index) => const SizedBox(height: 20,) ,
-        itemCount: counterList.length,
-      ),],),
+    Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(
+      children:[
+        ListView.separated(
+          shrinkWrap: true,
+          itemBuilder: (context,index ){ return ListRow(counteritem: counterList[index] );},
+          separatorBuilder: (context,index) => const SizedBox(height: 20,) ,
+          itemCount: counterList.length,
+        ),],),
+    ),
       ),
     );
   }

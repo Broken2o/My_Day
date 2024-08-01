@@ -11,7 +11,7 @@ class DayImageWidget extends StatelessWidget{
           height: MediaQuery.of(context).size.height*0.5,
           width: MediaQuery.of(context).size.width*0.85,
           child: const Image(
-              image: AssetImage('assets/images/day.png'),),),
+              image: AssetImage('assets/images/Day.png'),),),
     );
   }
 }
