@@ -20,6 +20,7 @@ class _ShopRowState extends State<ListRow> {
       child: BlocBuilder <CounterCubit , CounterStates>(
         builder: (BuildContext context, CounterStates state) {
           return  Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(
                   height: MediaQuery.of(context).size.height*0.15,

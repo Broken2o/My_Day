@@ -18,7 +18,7 @@ class CounterScreen extends StatelessWidget {
       body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/day.png'),
+              image: AssetImage('assets/images/day.jpg'),
               fit: BoxFit.cover,
             ),
           ),
