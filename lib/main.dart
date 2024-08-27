@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_day/views/day_counter.dart';
+import 'package:my_day/views/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
